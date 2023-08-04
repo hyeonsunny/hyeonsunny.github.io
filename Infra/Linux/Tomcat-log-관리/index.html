@@ -6,22 +6,27 @@
     
 
     
-    <title>hexo init | my.. Stack Overflow</title>
+    <title>Tomcat log 관리 | my.. Stack Overflow</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="Linux,Tomcat,logrotate,crontab,rotateLogs" />
     
     <meta name="description" content="draft..">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo init">
-<meta property="og:url" content="http://example.com/2023/08/01/hexo-init/index.html">
+<meta property="og:title" content="Tomcat log 관리">
+<meta property="og:url" content="http://example.com/Infra/Linux/Tomcat-log-%EA%B4%80%EB%A6%AC/index.html">
 <meta property="og:site_name" content="my.. Stack Overflow">
 <meta property="og:description" content="draft..">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-08-01T04:19:19.000Z">
-<meta property="article:modified_time" content="2023-08-04T03:02:00.440Z">
+<meta property="article:published_time" content="2023-08-01T04:14:54.000Z">
+<meta property="article:modified_time" content="2023-08-04T03:02:00.439Z">
 <meta property="article:author" content="Hyeonsunny">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Tomcat">
+<meta property="article:tag" content="logrotate">
+<meta property="article:tag" content="crontab">
+<meta property="article:tag" content="rotateLogs">
 <meta name="twitter:card" content="summary">
     
 
@@ -150,19 +155,19 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/etc/">etc</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/etc/hexo-blog/">hexo blog</a>
+    <a class="page-title-link" href="/categories/Infra/">Infra</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Infra/Linux/">Linux</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-hexo-init" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-Tomcat-log-관리" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        hexo init
+        Tomcat log 관리
         </h1>
     
 
@@ -173,16 +178,16 @@
                 
   <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/2023/08/01/hexo-init/" class="article-date">
-       <time datetime="2023-08-01T04:19:19.000Z" itemprop="datePublished">2023-08-01</time>
+    <a href="/Infra/Linux/Tomcat-log-%EA%B4%80%EB%A6%AC/" class="article-date">
+       <time datetime="2023-08-01T04:14:54.000Z" itemprop="datePublished">2023-08-01</time>
     </a>
   </div>
 
 
 <div class="article-date">
   <i class="fa fa-calendar-plus-o"></i>
-  <a href="/2023/08/01/hexo-init/" class="article-date">
-     <time datetime="2023-08-04T03:02:00.440Z" itemprop="dateModified">2023-08-04</time>
+  <a href="/Infra/Linux/Tomcat-log-%EA%B4%80%EB%A6%AC/" class="article-date">
+     <time datetime="2023-08-04T03:02:00.439Z" itemprop="dateModified">2023-08-04</time>
   </a>
 </div>
 
@@ -190,6 +195,11 @@
                 
 
                 
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Linux/" rel="tag">Linux</a>, <a class="tag-link-link" href="/tags/Tomcat/" rel="tag">Tomcat</a>, <a class="tag-link-link" href="/tags/crontab/" rel="tag">crontab</a>, <a class="tag-link-link" href="/tags/logrotate/" rel="tag">logrotate</a>, <a class="tag-link-link" href="/tags/rotateLogs/" rel="tag">rotateLogs</a>
+    </div>
+
                 
 
                 
@@ -212,23 +222,17 @@
 <nav id="article-nav">
     
         
-            <a href="/2023/08/01/%EC%BD%94%EB%93%9C%EC%97%85-%ED%8E%9C%EC%85%98/" id="article-nav-newer" class="article-nav-link-wrap">
+            <a href="/Infra/Linux/Linux-%EB%AA%85%EB%A0%B9%EC%96%B4/" id="article-nav-newer" class="article-nav-link-wrap half"></a>
         
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            코드업 - 펜션
+            Linux 명령어
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
-    
-        <a href="/2023/08/01/Linux-%EB%AA%85%EB%A0%B9%EC%96%B4/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Linux 명령어</p>
-        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
-        </a>
     
 </nav>
 
@@ -236,7 +240,7 @@
 
 
 
-    <a data-url="http://example.com/2023/08/01/hexo-init/" data-id="clkw0a68z0007xgv2atg9cnlf" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://example.com/Infra/Linux/Tomcat-log-%EA%B4%80%EB%A6%AC/" data-id="clkw0zdu90002f8v26rdchrzh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -306,14 +310,14 @@
             "@type": "Person",
             "name": "Hyeonsunny"
         },
-        "headline": "hexo init",
+        "headline": "Tomcat log 관리",
         "image": "http://example.com",
-        "keywords": "",
-        "genre": "etc hexo blog",
+        "keywords": "Linux Tomcat logrotate crontab rotateLogs",
+        "genre": "Infra Linux",
         "datePublished": "2023-08-01",
         "dateCreated": "2023-08-01",
         "dateModified": "2023-08-04",
-        "url": "http://example.com/2023/08/01/hexo-init/",
+        "url": "http://example.com/Infra/Linux/Tomcat-log-관리/",
         "description": "draft..
 ",
         "wordCount": 1
@@ -402,7 +406,7 @@
         <div id="countWrap" class="profile count-wrap">
             <i class="icon fa fa-folder-open"></i>
             <span>전체 글 수 </span>
-            <span class="total">6 개</span>
+            <span class="total">5 개</span>
         </div>
     </div>
     <!-- <div class="sidebar-top">
@@ -432,23 +436,17 @@
 <nav id="article-nav">
     
         
-            <a href="/2023/08/01/%EC%BD%94%EB%93%9C%EC%97%85-%ED%8E%9C%EC%85%98/" id="article-nav-newer" class="article-nav-link-wrap">
+            <a href="/Infra/Linux/Linux-%EB%AA%85%EB%A0%B9%EC%96%B4/" id="article-nav-newer" class="article-nav-link-wrap half"></a>
         
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            코드업 - 펜션
+            Linux 명령어
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
-    
-        <a href="/2023/08/01/Linux-%EB%AA%85%EB%A0%B9%EC%96%B4/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Linux 명령어</p>
-        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
-        </a>
     
 </nav>
 
@@ -460,7 +458,7 @@
     <div class="widget-wrap widget-list">
         <!-- <h3 class="widget-title">categories</h3> -->
         <div id="widget-category" class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Client/">Client</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Client/CSS/">CSS</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Coding-Test/">Coding Test</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Coding-Test/CodeUp/">CodeUp</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Infra/">Infra</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Infra/Linux/">Linux</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Language/">Language</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Language/Kotlin/">Kotlin</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/etc/">etc</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/etc/hexo-blog/">hexo blog</a><span class="category-list-count">1</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Client/">Client</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Client/CSS/">CSS</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Coding-Test/">Coding Test</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Coding-Test/CodeUp/">CodeUp</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Infra/">Infra</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Infra/Linux/">Linux</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/etc/">etc</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/etc/hexo-blog/">hexo blog</a><span class="category-list-count">1</span></li></ul></li></ul>
         </div>
     </div>
 
@@ -501,7 +499,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'http://example.com/2023/08/01/hexo-init/';
+    var disqus_url = 'http://example.com/Infra/Linux/Tomcat-log-%EA%B4%80%EB%A6%AC/';
     
     (function() {
     var dsq = document.createElement('script');
